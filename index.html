@@ -148,7 +148,7 @@
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
+		          		<span class="subheading">Hey!!!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Ayon Ghosh</span></h1>
 
 						<!-- Element to contain animated typing -->
@@ -161,9 +161,15 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Web Developer  ',
-						'Competitive Programmer  ',
-						];
+  'Full-Stack Developer',
+  'React & Next.js Enthusiast',
+  'Problem Solver',
+  'Backend Developer (Node & Django)',
+  'AI & ML Explorer',
+  'GIS & Data Visualization Trainee',
+  'Open Source Contributor',
+];
+
 
 						// Create a function to display the typing animation for a given text
 						function playTypingAnimation(text) {
@@ -171,14 +177,14 @@
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 100); // Increase the delay to slow down the typing animation
+							}, i * 100+50); // Increase the delay to slow down the typing animation
 						}
 
 						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 100);
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 100) % typingTexts.length]);
+						}, text.length * (100+50));
 						}
 
 						// Start the typing animation loop
@@ -188,7 +194,7 @@
 
 						<br>
 						<br>
-			            <h2>A Student of CSE</h2>
+			            <h2>A  Computer Science graduate focused on building software and systems</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <p>
@@ -209,70 +215,68 @@
 				<div class="row d-flex align-items-stretch">
 				<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="">
-									  <div class="about-img">
-										<img src="images/ayon2.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-								  </div>
+  <div class="img-about img d-flex align-items-stretch">
+    <div class="overlay">
+      <div class="row">
+        <div class="">
+          <div class="about-img">
+            <img src="images/ayon2.png" class="img-fluid rounded b-shadow-a" alt="Ayon Ghosh">
+          </div>
+        </div>
+      </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>React</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>Node Js</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>Django</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Android Studio</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>Machine Learning</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>Deep Learning</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>C++</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Python</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Java</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+      <div class="skill-mf">
+        <p class="title-s">Skills</p>
+
+        <span>React & Next.js</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>Node.js & Express</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>Django & Flask</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>Android (Java/Kotlin)</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>Machine Learning</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>Deep Learning</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>C++ (Competitive)</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>Python</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <span>Java</span>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 					
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
@@ -280,18 +284,17 @@
 								
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
-								
-								<p>App & Web Development Enthusiast! Learning to build user-friendly mobile apps (Native) and dynamic websites (Django,Mern). Eager to apply these skills ,
-									contributing with teamwork and a strong learning mindset.
-									</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Web & App Dev</span></li>
-									<li class="d-flex"><span>Domain:</span><span>Management<span></span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Computer Science & Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>Bengali ,English</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Artiicial Intelligence & Machine Learning , DataScience & Analytics</span></li>
-									
-								</ul>
+
+								<p>I’m a Computer Science graduate who builds full-stack web applications and explores machine learning on the side. I've worked with React, Next.js, Node, Django, and also dabbled in GIS and Android development. I enjoy solving real problems, working in teams, and learning fast.</p>
+
+<ul class="about-info mt-4 px-md-0 px-2">
+  <li class="d-flex"><span>Profile:</span> <span>Full-Stack Web Developer</span></li>
+  <li class="d-flex"><span>Domain:</span> <span>Web, GIS & AI Systems</span></li>
+  <li class="d-flex"><span>Education:</span> <span>Bachelor in Computer Science & Engineering</span></li>
+  <li class="d-flex"><span>Languages:</span> <span>Bengali, English</span></li>
+  <li class="d-flex"><span>Interests:</span> <span>Machine Learning, Data Analytics, System Design</span></li>
+</ul>
+
 							</div>
 						</div>
 
@@ -347,7 +350,7 @@
     					<span class="date">2018-2020</span>
     					<h2>HSC</h2>
     					<span class="position">Narayanganj College</span>
-    					<p class="mt-4">Grade:A(4.33)</p>
+    					<p class="mt-4">Grade--4.33</p>
     				</div>
 				</div>
     		</div>
@@ -362,100 +365,56 @@
 
    
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the my projects which i made using verious technologies and languages</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ayon7544/Smart-Country-Management.git" class="block-20 zoom-effect" style="background-image: url('images/Utopia.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ayon7544/MediMind">Utopia-Country Management Website</a></h3>
-				  <p>Utopia is a comprehensive platform revolutionizing governance by centralizing vital services and information for citizens. Our innovative voting system, coupled with access to government data on transportation, healthcare, education, and entertainment, empowers citizens to engage actively in decision-making and access essential services seamlessly. Experience the future of governance, all in one platform.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ayon7544/Smoker-Detector-" class="block-20 zoom-effect" style="background-image: url('images/smoker.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ayon7544/Smoker-Detector-">Smoker-Detector (Find Smoker Using Machine Learning)</a></h3>
-				  <p>Smoker-Detector is a Flask-based website that predicts smoking status using 27 user-provided parameters. The platform integrates a predictive machine learning model that achieves an accuracy rate of over 80%. It features a user-friendly design, allowing users to easily input their data and view the results seamlessly. This project combines machine learning and web development to create a simple, effective tool for predicting smoking habits.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/ayon7544/MediMind" class="block-20 zoom-effect" style="background-image: url('images/medi.svg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/ayon7544/MediMind.git">Medi-Mind (AI-Based Healthcare System)</a></h3>
-				  <p>Medi-Mind is an AI-powered healthcare platform developed using Django, designed to assist users with disease detection through machine learning algorithms. The platform offers primary suggestions based on symptoms, recommends appropriate doctors, and guides users on necessary actions. It also features a seamless consultation booking system and supports secure payment transactions, enhancing the overall user experience. Medi-Mind combines AI, web development, and user-focused design to improve access to healthcare services.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="2">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="7">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="450">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Here are some of the projects I've built using Django, React, Flask, Node.js, and various backend and ML tools.</p>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems</h4>
-						<br>
-						<p><a href="https://github.com/ayon7544" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+    </div>
+    <div class="row d-flex">
+      <div class="row d-flex justify-content-center">
+        
+        <!-- Utopia -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="https://github.com/ayon7544/Smart-Country-Management.git" class="block-20 zoom-effect" style="background-image: url('images/Utopia.jpg');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="https://github.com/ayon7544/Smart-Country-Management.git">Utopia – Country Management System</a></h3>
+              <p>Built with Django, Utopia centralizes essential government services including healthcare, voting, transport, and entertainment. It features encrypted voting, payment integration, and secure authentication to offer a unified governance platform.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smoker Detector -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="https://github.com/ayon7544/Smoker-Detector-" class="block-20 zoom-effect" style="background-image: url('images/smoker.jpg');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="https://github.com/ayon7544/Smoker-Detector-">Smoker-Detector – ML-Based Smoking Prediction</a></h3>
+              <p>A Flask-based web app that predicts a user’s smoking status based on 27 inputs. The ML model achieves 80%+ accuracy. Designed with a clean UI for easy input and result visualization. Combines web and ML into a single, usable tool.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medi-Mind -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="https://github.com/ayon7544/MediMind" class="block-20 zoom-effect" style="background-image: url('images/medi.svg');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading"><a href="https://github.com/ayon7544/MediMind">Medi-Mind – AI-Powered Healthcare Platform</a></h3>
+              <p>Built with the MERN stack (MongoDB, Express.js, React, Node.js), Medi-Mind provides AI-driven symptom analysis, doctor suggestions, appointment booking, and secure payment. A complete healthcare assistant for users and patients.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
